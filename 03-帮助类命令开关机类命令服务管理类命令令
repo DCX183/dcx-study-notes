@@ -1,0 +1,24 @@
+一.帮助类命令
+man【命令或配置文件】
+-显示说明：
+NAME --命令的名称和单行描述
+SYNOPSIS--怎样使用命令
+DESCRIPTION--命令功能的深入讨论
+EXAMPLES--怎样使用命令的例子
+SEE ALSO--相关主题（通常是手册页）
+help 命令
+二.开关机类命令
+sync将内存中的数据同步到硬盘中
+poweroff关闭系统，等同于shutdown -h now
+reboot重启系统，等同于shutdown -r now
+shutdown【选项】时间
+-h=half关机
+-r=reboot重启
+now 立刻关机
+时间 等待多长时间关机，单位分钟
+三.服务管理类命令
+systemctl start 服务名 开启服务
+systemctl stop 服务名 关闭服务
+systemctl restart 服务名 重启
+systemctl status 服务名 查看服务
+systemctl --type service 查看正在运行的服务
